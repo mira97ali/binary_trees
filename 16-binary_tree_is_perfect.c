@@ -13,7 +13,7 @@ size_t get_tree_height(const binary_tree_t *current)
 {
 	size_t height_left;
 	size_t height_right;
-	
+
 	if (!current)
 		return (0);
 
