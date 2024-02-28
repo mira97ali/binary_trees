@@ -64,6 +64,8 @@ size_t compute_tree_size(const binary_tree_t *current);
 
 int binary_tree_is_perfect(const binary_tree_t *root);
 
+binary_tree_t *binary_tree_sibling(binary_tree_t *target_node);
+
 
 
 
