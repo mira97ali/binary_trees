@@ -2,10 +2,10 @@
 
 /**
  * binary_tree_node - Constructs a new binary tree node.
- * @parent: Pointer to the parent node.
+ * @parent: ptr to the parent node.
  * @value: Value to assign to the new node.
  *
- * Return: Pointer to the created node, or NULL if allocation fails.
+ * Return: ptr to the created node, or NULL if it fails.
  */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
