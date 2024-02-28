@@ -40,6 +40,10 @@ void binary_tree_inorder(const binary_tree_t *root, void (*action)(int));
 
 void binary_tree_postorder(const binary_tree_t *root, void (*action)(int));
 
+size_t max_height(size_t left, size_t right);
+
+size_t binary_tree_height(const binary_tree_t *root);
+
 
 
 #endif /* _BINARY_TREES_H_ */
