@@ -44,6 +44,8 @@ size_t max_height(size_t left, size_t right);
 
 size_t binary_tree_height(const binary_tree_t *root);
 
+size_t binary_tree_depth(const binary_tree_t *node);
+
 
 
 #endif /* _BINARY_TREES_H_ */
