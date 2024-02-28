@@ -12,13 +12,16 @@
 
 size_t calculate_height(const binary_tree_t *current_node)
 {
+	size_t height_left;
+	size_t height_right;
+
 	if (current_node == NULL)
 	{
 		return (0);
 	}
 
-	size_t height_left = calculate_height(current_node->left);
-	size_t height_right = calculate_height(current_node->right);
+	height_left = calculate_height(current_node->left);
+	height_right = calculate_height(current_node->right);
 
 	return (1 + (height_left > height_right ? height_left : height_right));
 }
@@ -35,13 +38,16 @@ size_t calculate_height(const binary_tree_t *current_node)
 
 int binary_tree_balance(const binary_tree_t *root)
 {
+	int left_subtree_height;
+	int right_subtree_height;
+
 	if (root == NULL)
 	{
 		return (0);
 	}
 
-	int left_subtree_height = calculate_height(root->left);
-	int right_subtree_height = calculate_height(root->right);
+	left_subtree_height = calculate_height(root->left);
+	right_subtree_height = calculate_height(root->right);
 
 	return (left_subtree_height - right_subtree_height);
 }
