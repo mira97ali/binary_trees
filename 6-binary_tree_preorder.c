@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_preorder - Executes a function on each node in pre-order sequence.
+ * binary_tree_preorder - Executes a function in pre-order sequence.
  * @root: Ptr to the root node.
  * @action: Ptr to the function to execute.
  */
