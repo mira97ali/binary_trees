@@ -38,6 +38,8 @@ void binary_tree_preorder(const binary_tree_t *root, void (*action)(int));
 
 void binary_tree_inorder(const binary_tree_t *root, void (*action)(int));
 
+void binary_tree_postorder(const binary_tree_t *root, void (*action)(int));
+
 
 
 #endif /* _BINARY_TREES_H_ */
